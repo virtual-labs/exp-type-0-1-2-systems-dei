@@ -1,9 +1,9 @@
 ## Introduction
 
 
-<b>Discipline | <b>Fill your discipline name here
+<b>Discipline | <b>Electrical Engineering 
 :--|:--|
-<b> Lab | <b> Fill your lab name here
+<b> Lab | <b> Control Engineering Virtual Laboratory (PCC-EE17)
 <b> Experiment|     <b>4. Find and Plot the step and impulse response for a type ‘0’, type ‘1’, type ‘2’ systems
 
 ### About the Experiment 
