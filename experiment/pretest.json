@@ -2,37 +2,59 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Why do we perform Laplace Transform?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "It is useful for study of transient responses (or time responses) of Linear Time-Invariant Systems (LTIS). ",
+        "b": "It is also utilised to solve complex differential equations.",
+        "c": "Both a and b",
+        "d": "None of the above"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why Transfer Function is always realised in S domain?",
+      "answers": {
+        "a": "To calculate output y(t) of system in time domain the convolution of the input with the response signal is to be calculated. This makes it a complex process.",
+        "b": "Mathematics involved in Transformation of the equation made the realization easier to understand.",
+        "c": "Both a and b",
+        "d": "None of the above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the Laplace transform of Ramp Response?",
+      "answers": {
+        "a": "1/S<sup>3</sup>",
+        "b": "1/S<sup>2</sup>",
+        "c": "1/S",
+        "d": "None of the above"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
-    {
-      "question": "This is a Sample Question 2?",
+        {
+      "question": "Statement: An impulse response is defined as signal caused due to sudden change in amplitude. <br><br> Example: Impulse response are taken into consideration while testing breaking mechanism of designed automobile.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Example is able to explain the statement.",
+        "b": "Example is contradicting the information.",
+        "c": "Information provided in example is not enough to draw a conclusion.",
+        "d": "None of the above"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "Which of the following statement is correct?",
+      "answers": {
+        "a": "Based on the presence of poles at origin we can classify Type of system",
+        "b": "Type 0 system has more poles at origin compare to type 1 and 2 system.",
+        "c": "Both a and b",
+        "d": "None of the above"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]

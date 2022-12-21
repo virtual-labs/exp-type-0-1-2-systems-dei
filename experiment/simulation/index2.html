@@ -3,21 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/main2.css">
 </head>
 <body>
 
 	<header>
 	
 	<select id="pagechanger">
-		<option value="1" selected>
-			 To determine Step and Impulse response of Type 0 2nd order system 
+		<option value="1" >
+			 To determine Step, Impulse and Ramp response of Type 0 2nd order system 
 		</option>
 		<option value="2" >
-			 To determine Step and Impulse response of Type 1 2nd order system 
+			 To determine Step, Impulse and Ramp response of Type 1 2nd order system 
 		</option>
-		<option value="3" >
-			 To determine Step and Impulse response of Type 2 2nd order system 
+		<option value="3" selected>
+			 To determine Step, Impulse and Ramp response of Type 2 2nd order system 
 		</option>
 	</select>
 	<a href="./index.html" id="sm1" style="display:none;"></a>
@@ -68,9 +68,9 @@
 			<code id="mat-code">
 				<span id="line1">Input transfer equation</span><br>
 				<span id="out1" class="genout"></span>
-				<span id="line2">Type '0' Step Response transfer equation</span><br>
+				<span id="line2">Type '2' Step Response transfer equation</span><br>
 				<span id="out2" class="genout"></span>
-				<span id="line3">Type '0' Impulse Response transfer equation</span><br>
+				<span id="line3">Type '2' Impulse Response transfer equation</span><br>
 				<span id="out3" class="genout"></span>
 				<div id="tanswer"></div>
 				<div class="mob-chart">
@@ -95,6 +95,7 @@
 		<div id="chartcont1">
 			<canvas id="myChart1" style="width:100%;"></canvas>
 			<canvas id="myChart2" style="width:100%;"></canvas>
+
 		</div>
 		
 	</div>
@@ -104,7 +105,7 @@
 		<span id="fconclusions">Conclusions will show here</span>
 	</div>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/main2.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
 </body>
 </html>
