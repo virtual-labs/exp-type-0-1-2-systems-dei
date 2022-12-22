@@ -19,7 +19,8 @@ var kpi,essi,esss,kp;
          document.getElementById("sm3").click();
 
  }
- var conclusion;
+ var conclusion = "For Impulse Response:<br>Based on the analysis of the given system i.e. Type 0 impulse response it can be concluded that when the system was presented with a brief input signal there is a variation and later when the input is removed the output is again zero.<br>";
+ conclusion = conclusion+"<br> For Step Response:<br>After analysis of the given system i.e. Type 0 step response we can conclude that when input of system changes from from 0 to 1 in short amount of time there is an overshoot in the system but later it reaches to steady state value. "
 
  function addval() {
      lab = [];

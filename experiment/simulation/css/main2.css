@@ -336,7 +336,7 @@ header {
 
 .conclusions {
     border-top: 4px solid dodgerblue;
-    height: 16vh;
+    height: auto;
     position: relative;
     background-color: aliceblue;
 }
@@ -350,7 +350,7 @@ header {
 
 #fconclusions {
     position: relative;
-    left: 2.5%;
+    padding: 5px;
     color: dodgerblue;
 }
 

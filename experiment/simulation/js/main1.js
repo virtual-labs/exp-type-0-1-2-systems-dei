@@ -23,7 +23,8 @@ function changepage() {
         document.getElementById("sm3").click();
 
 }
-var conclusion;
+var conclusion="For Impulse Response:<br>we can conclude that for a brief input the given system reacted but it is less impulsive compared with Type 0 impulse response and once the input is removed there is offset remaining it is unable to reach it's initial state i.e. zero<br>";
+conclusion = conclusion+"<br>For Step Response:<br>Type 1 step response on comparison with Type 0 we can conclude that output of system keep on increasing with the passage of time."
 
 function addval() {
     lab = [];

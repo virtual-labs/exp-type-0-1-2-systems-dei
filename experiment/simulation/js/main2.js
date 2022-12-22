@@ -22,7 +22,8 @@ function changepage() {
         document.getElementById("sm3").click();
 
 }
-var conclusion;
+var conclusion="For Impulse Response:<br>Type 2 impulse unlike Type 0 and 1 it provides a ramp like behaviour i.e. output keep on increasing with passage of time.<br>";
+conclusion = conclusion+"For Step Response:<br>Type 2 step response provides a similar response like type 1 response but it is more robust and faster as compared with Type 1 step response."
 
 function addval() {
     lab = [];
