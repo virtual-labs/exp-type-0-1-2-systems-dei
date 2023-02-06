@@ -288,7 +288,7 @@ var kpi,essi,esss,kp;
 
  function highlightline(l) {
      var ln = "line" + l;
-     var out = "out" + l;
+     var out = "out" + parseInt(l-1);
      document.getElementById(ln).setAttribute("style", "color:blue;");
      document.getElementById(out).setAttribute("style", "display:block;");
      if (lc != 1)
@@ -443,8 +443,9 @@ var kpi,essi,esss,kp;
              lab_final.push(i.toFixed(1));
          }
      } else {
-        impulseresponse = "$${" + co1.toFixed(2) +"*e^{-1*t}*t}$$";
+        
          co1 = 2 * b2 / b1;
+         impulseresponse = "$${" + co1.toFixed(2) +"*e^{-1*t}*t}$$";
          if (amplitudei2(co1, 1, 10) == amplitudei2(co1, 1, 9.8)) {
              maxl = 10;
              stepl = 0.05;

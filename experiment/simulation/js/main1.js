@@ -379,7 +379,7 @@ function widthcheck(ms) {
 
 function highlightline(l) {
     var ln = "line" + l;
-    var out = "out" + (l - 1);
+    var out = "out" + parseInt(l - 1);
     console.log(out);
     document.getElementById(ln).setAttribute("style", "color:blue;");
     document.getElementById(out).setAttribute("style", "display:block;");
