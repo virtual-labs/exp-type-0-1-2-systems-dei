@@ -4,7 +4,7 @@
      lab_step = [],
      dat_step = [],
      lab_final = [];
-var stepeqn,impulseresponse;
+var stepeqn,impuleqn;
 var eqn;
 var poles = [],
     roots = [];
@@ -19,7 +19,8 @@ var kpi,essi,esss,kp;
          document.getElementById("sm3").click();
 
  }
- var conclusion;
+ var conclusion = "For Impulse Response:<br>Based on the analysis of the given system i.e. Type 0 impulse response it can be concluded that when the system was presented with a brief input signal there is a variation and later when the input is removed the output is again zero.<br>";
+ conclusion = conclusion+"<br> For Step Response:<br>After analysis of the given system i.e. Type 0 step response we can conclude that when input of system changes from from 0 to 1 in short amount of time there is an overshoot in the system but later it reaches to steady state value. "
 
  function addval() {
      lab = [];
@@ -50,6 +51,7 @@ var kpi,essi,esss,kp;
      document.getElementById("chartcont").setAttribute("style", "display:none");
      document.getElementById("tanswer").setAttribute("style", "display:none;");
      document.getElementById("chartcont1").setAttribute("style", "display:none;");
+     document.getElementById("out3").setAttribute("style", "display:none;");
      for (let i = 1; i < 3; i++) {
          let out = "out" + i;
          let ln = "line" + (i + 1);
@@ -109,7 +111,7 @@ var kpi,essi,esss,kp;
         document.getElementById("out2").innerHTML = eqn;
         
          
-         document.getElementById("tanswer").innerHTML ="<br> Step Response in time domain:"+ stepeqn +"<br>Kp:"+kp.toFixed(2)+"<br>ess:"+esss.toFixed(2)+ "<br><br>Impulse Response in time domain:"+impulseresponse+"<br>K:"+kpi.toFixed(2)+"<br>ess:"+essi.toFixed(2);
+         document.getElementById("tanswer").innerHTML ="<br> Step Response in time domain:"+ stepeqn +"<br>Kp:"+kp.toFixed(2)+"<br>ess:"+esss.toFixed(2)+ "<br><br>Impulse Response in time domain:"+impuleqn+"<br>K:"+kpi.toFixed(2)+"<br>ess:"+essi.toFixed(2);
          var j, k;
 
          var ms = window.matchMedia("(max-width:950px)");
@@ -161,6 +163,7 @@ var kpi,essi,esss,kp;
          document.getElementById("line3").setAttribute("style", "color:black;");
          document.getElementById("mrun").disabled = true;
          var ms = window.matchMedia("screen and (max-width:950px)");
+         document.getElementById("out3").setAttribute("style", "display:block;");
          widthcheck(ms);
          ms.addListener(widthcheck);
          document.getElementById("mrun").disabled = true;
@@ -286,8 +289,10 @@ var kpi,essi,esss,kp;
  }
 
  function highlightline(l) {
+    console.log(l);
      var ln = "line" + l;
-     var out = "out" + parseInt(l-1);
+     var out = "out" + (l-1) ;
+     console.log(out);
      document.getElementById(ln).setAttribute("style", "color:blue;");
      document.getElementById(out).setAttribute("style", "display:block;");
      if (lc != 1)
@@ -411,7 +416,7 @@ var kpi,essi,esss,kp;
          co1 = 2 * b1 / sqd;
          co2 = -1 * b2 / 2 / a2;
          co3 = sqd / 2 / a2;
-         impulseresponse = "$${" +co1.toFixed(2)+"*e^{"+co2.toFixed(2)+"*t}*sin({"+ co3.toFixed(2)+"*t})}$$"
+         impuleqn = "$${" +co1.toFixed(2)+"*e^{"+co2.toFixed(2)+"*t}*sin({"+ co3.toFixed(2)+"*t})}$$"
          if (amplitudei1(co1, co2, co3, 1, 10) == amplitudei1(co1, co2, co3, 1, 9.8)) {
              maxl = 10;
              stepl = 0.05;
@@ -442,9 +447,8 @@ var kpi,essi,esss,kp;
              lab_final.push(i.toFixed(1));
          }
      } else {
-        
+        impuleqn = "$${" + co1.toFixed(2) +"*e^{-1*t}*t}$$";
          co1 = 2 * b2 / b1;
-         impulseresponse = "$${" + co1.toFixed(2) +"*e^{-1*t}*t}$$";
          if (amplitudei2(co1, 1, 10) == amplitudei2(co1, 1, 9.8)) {
              maxl = 10;
              stepl = 0.05;
