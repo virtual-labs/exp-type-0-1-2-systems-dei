@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/main2.css">
+</head>
+<body>
+
+	<header>
+	
+	<select id="pagechanger">
+		<option value="1" >
+			 To determine Stepand Impulse response of Type 0 2nd order system 
+		</option>
+		<option value="2" >
+			 To determine Stepand Impulse response of Type 1 2nd order system 
+		</option>
+		<option value="3" selected>
+			 To determine Stepand Impulse response of Type 2 2nd order system 
+		</option>
+	</select>
+	<a href="./index.html" id="sm1" style="display:none;"></a>
+	<a href="./index1.html" id="sm2" style="display: none;"></a>
+	<a href="./index2.html" id="sm3" style="display: none;"></a>
+	<button id="input_button" onclick="changepage()">Select</button>
+</header>
+	<div id="simulation-cont">
+	<div id="enter-val">
+		<div id="input-statements">	
+			<h3 class="mhead" style="color:cadetblue; text-align:center; margin:5px 0px">USER INPUTS</h3>
+				<div class="numerator">
+					<h3>Coeffecients of Numerator Polynomials</h3>
+					<input type="range" name="valuea"  min="1" max="10" list = "datlist" id="numc" onchange="showval() " onmousemove="showval()" class="range-input" value="1">
+					<p>c:<span id="lc"></span></p>
+				</div>
+				<div class="denominator">
+					<h3>Enter Denominator values</h3>
+					<input type="range" name="valuea"  min="1" max="5" list = "datlist" id="dena" onchange="showval() " onmousemove="showval()" class="range-input" value="0">
+					<p>p:<span id="lp"></span></p>
+					<input type="range" name="valuea"  min="1" max="5" list = "datlist" id="denb" onchange="showval() " value="0" onmousemove="showval()" class="range-input">
+					<p>q:<span id="lq"></span></p>
+					<input type="range" name="valuea"  min="0" max="5" list = "datlist" id="denc" onchange="showval() " value="0" onmousemove="showval()" class="range-input">
+					<p>r:<span id="lr"></span></p>
+				</div>
+				
+				<button id="input_value" onclick="addval();">Submit</button>
+			<datalist id="datlist">
+				<option value="0" label="0%"></option>
+				<option value="1"></option>
+				<option value="2"></option>
+				<option value="3"></option>
+				<option value="4"></option>
+				<option value="5" label="50%"></option>
+				<option value="6"></option>
+				<option value="7"></option>
+				<option value="8"></option>
+				<option value="9"></option>
+				<option value="10" label="100%"></option>
+			</datalist>
+		</div>
+	</div>
+	<div class="matlab-working mat" id="matwork" title="Please enter the values of coeffecients of the equation first">
+		<div class="program" >
+			<h3 class="mhead">CALCULATIONS WINDOW</h3>
+			<div class="prog-window">
+			<p class="mpara">You can run each command, line by line by pressing the run button and see the output of the particular line below it</p>
+			<code id="mat-code">
+				<span id="line1">Input transfer equation</span><br>
+				<span id="out1" class="genout"></span>
+				<span id="line2">Type '2' Step Response transfer equation</span><br>
+				<span id="out2" class="genout"></span>
+				<span id="line3">Type '2' Impulse Response transfer equation</span><br>
+				<span id="out3" class="genout"></span>
+				<div id="tanswer"></div>
+				<div class="mob-chart">
+				<div id="chartcont">
+					<canvas id="chartmine1" style="width:100%;"></canvas>
+					<canvas id="chartmine2" style="width:100%;"></canvas>
+					</div>
+				</div>
+				<br>
+			</code>
+
+		</div>
+			<button id="mrun" class=" mrun mrundisabled" onclick="runprog(1);" disabled><p>Run |</p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="whitesmoke" class="bi bi-play" viewBox="0 0 16 16" style="position: relative;">
+  <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+</svg></p></button>
+		</div>
+	</div>
+	<div class="right-cont " id="right-c">
+		<div class="rightc-head">
+			<h3>Results</h3>
+		</div>
+		<div id="chartcont1">
+			<canvas id="myChart1" style="width:100%;"></canvas>
+			<canvas id="myChart2" style="width:100%;"></canvas>
+
+		</div>
+		
+	</div>
+</div>
+	<div class="conclusions">
+		<h1> Conclusions</h1>
+		<span id="fconclusions">Conclusions will show here</span>
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	<script type="text/javascript" src="./js/main2.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+</body>
+</html>
