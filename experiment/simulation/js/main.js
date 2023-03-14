@@ -288,7 +288,7 @@ var kpi,essi,esss,kp;
 
  function highlightline(l) {
      var ln = "line" + l;
-     var out = "out" + parseInt(l-1);
+     var out = "out" + (l-1);
      document.getElementById(ln).setAttribute("style", "color:blue;");
      document.getElementById(out).setAttribute("style", "display:block;");
      if (lc != 1)
