@@ -16,7 +16,7 @@
                         time domain, static error coefficient and the steady-state error.</p>
 
 <p style="margin-left:20px;"><strong>4.1.3 Results:</strong></p>
-          <p style="margin-left:30px;">4.1.3.1 Once more click on the “Run” button to obtain the step response and impulse response plot in the s-plane in the result section and conclusion in the Conclusions section.</p>
+          <p style="margin-left:30px;">4.1.3.1  Once more, click on the “Run” button to obtain the step response and impulse response plots in the result section and the conclusions of the experiment in the Conclusions Section.</p>
 
 
 <p style="margin-left:0px;"><strong>4.2 Procedure: Select “To determine Step and Impulse response of Type 1 2nd order system”.</strong></p>
@@ -36,7 +36,7 @@
                         time domain, static error coefficient and the steady-state error.</p>
 
 <p style="margin-left:20px;"><strong>4.2.3 Results:</strong></p>
-             <p style="margin-left:30px;">4.2.3.1 Once more click on the “Run” button to obtain the step response and impulse response plot in the s-plane in the result section and conclusion in the Conclusions section.</p>
+             <p style="margin-left:30px;">4.2.3.1 Once more, click on the “Run” button to obtain the step response and impulse response plots in the result section and the conclusion of the experiment in the Conclusions Section.</p>
 
 <p style="margin-left:0px;"><strong>4.3 Procedure: Select “To determine Step and Impulse response of Type 2 2nd order system”.</strong></p>
 <p style="margin-left:20px;"><strong>4.3.1 User Input:</strong></p>
@@ -55,4 +55,4 @@
                         time domain, static error coefficient and the steady-state error.</p>
 
 <p style="margin-left:20px;"><strong>4.3.3 Results:</strong></p>
-             <p style="margin-left:30px;">4.3.3.1 Once more click on the “Run” button to obtain the step response and impulse response plot in the s-plane in the result section and conclusion in the Conclusions section.</p>
+             <p style="margin-left:30px;">4.3.3.1 Once more, click on the “Run” button to obtain the step response and impulse response plots in the result section and the conclusion of the experiment in the Conclusions Section.</p>
