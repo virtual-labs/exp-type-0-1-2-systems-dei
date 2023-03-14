@@ -162,6 +162,7 @@ var kpi,essi,esss,kp;
          document.getElementById("line3").setAttribute("style", "color:black;");
          document.getElementById("mrun").disabled = true;
          var ms = window.matchMedia("screen and (max-width:950px)");
+      document.getElementById("out3").setAttribute("style", "display:block;");
          widthcheck(ms);
          ms.addListener(widthcheck);
          document.getElementById("mrun").disabled = true;
