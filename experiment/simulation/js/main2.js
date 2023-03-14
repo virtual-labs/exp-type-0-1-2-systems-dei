@@ -55,6 +55,7 @@ function addval() {
     document.getElementById("chartcont").setAttribute("style", "display:none");
     document.getElementById("tanswer").setAttribute("style", "display:none;");
     document.getElementById("chartcont1").setAttribute("style", "display:none;");
+    document.getElementById("out3").setAttribute("style", "display:none;");
     for (let i = 1; i < 3; i++) {
         let out = "out" + i;
         let ln = "line" + (i + 1);
