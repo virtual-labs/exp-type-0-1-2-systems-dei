@@ -1,0 +1,485 @@
+h1 {
+    background-color: beige;
+    margin: none;
+}
+
+header {
+    height: 10vh;
+    border-bottom: 4px solid cadetblue;
+}
+
+#pagechanger {
+    border: none;
+    color: cadetblue;
+    font-size: 20px;
+    outline: none;
+    position: relative;
+    left: 10%;
+    top: 2.5vh;
+}
+
+#pagechanger:hover {
+    cursor: pointer;
+}
+
+#input_button {
+    background-color: dodgerblue;
+    position: relative;
+    top: 2.5vh;
+    font-size: 18px;
+    border-radius: 10px;
+    color: whitesmoke;
+    height: 30px;
+    width: 100px;
+    left: 15%;
+    border: none;
+}
+
+#input_button:hover {
+    cursor: pointer;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+#enter-val {
+    width: 30%;
+    float: left;
+    height: 65vh;
+}
+
+#input-statements {
+    width: 100%;
+    height: 70vh;
+    background-color: aliceblue;
+    padding: 10px 0;
+}
+
+.numerator {
+    width: 100%;
+    height: auto;
+    color: cadetblue;
+    text-align: center;
+}
+
+.numerator h3 {
+    position: relative;
+    top: 5px;
+    font-size: 15px;
+    margin: 15px 0px;
+}
+
+#input-statements p {
+    margin: 15px 0px;
+}
+
+#datalist option {
+    color: cadetblue;
+}
+
+.denominator {
+    width: 100%;
+    height: auto;
+    color: cadetblue;
+    text-align: center;
+}
+
+.denominator h3 {
+    font-size: 15px;
+    margin: 15px 0px;
+}
+
+.range-input {
+    height: 12px;
+    position: relative;
+    top: 10px;
+    width: 70%;
+}
+
+.range-input:hover {
+    cursor: pointer;
+}
+
+.displayed-eqn {
+    height: 25%;
+    width: 100%;
+    background-color: aliceblue;
+    color: cadetblue;
+    padding: 4px 0;
+}
+
+.display-eqn {
+    padding: 0 20px;
+    top: 10px;
+    position: relative;
+    height: 80%;
+}
+
+#generated_eqn {
+    color: darkcyan;
+}
+
+#input_value {
+    background-color: dodgerblue;
+    position: relative;
+    top: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: whitesmoke;
+    height: 30px;
+    width: 60%;
+    left: 20%;
+    border: none;
+}
+
+#input_value:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    transform: scale(1.01);
+    border: 1px solid dodgerblue;
+    background-color: whitesmoke;
+    color: cyan;
+    transition-duration: 0.5s;
+}
+
+#input_value:focus {
+    border-style: double;
+    background-color: whitesmoke;
+    color: cadetblue;
+}
+
+.program {
+    width: 100%;
+    height: 95%;
+    background-color: #004170;
+    color: whitesmoke;
+    border-radius: 20px;
+}
+
+.matlab-working {
+    width: 35%;
+    display: inline-block;
+    background-color: aliceblue;
+    height: 75vh;
+}
+
+.genout {
+    display: none;
+}
+
+.array {
+    font-size: 15px;
+}
+
+.prog-window {
+    background-color: whitesmoke;
+    height: 75%;
+    position: relative;
+    left: 3%;
+    width: 90%;
+    color: cadetblue;
+    padding: 0 2%;
+    border-radius: 15px;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+
+.mhead {
+    position: relative;
+    left: 5%;
+    top: 10px;
+    width: 90%;
+}
+
+.mrun {
+    border: none;
+    left: 5%;
+    position: relative;
+    top: 10px;
+    width: 80px;
+    height: 25px;
+    font-size: 15px;
+    box-shadow: 2px 2px black;
+    border-radius: 4px;
+}
+
+.mrun p {
+    margin: 0;
+    float: left;
+}
+
+.mrunenabled:hover {
+    background-color: cyan;
+    cursor: pointer;
+}
+
+.mrunenabled:active {
+    box-shadow: none;
+    transform: translateX(1px);
+    transform: translateY(1px);
+}
+
+.mrunenabled {
+    background-color: dodgerblue;
+    color: whitesmoke;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.mrundisabled {
+    background-color: gray;
+    cursor: not-allowed;
+    color: whitesmoke;
+    opacity: 0.5;
+}
+
+#chartmine1 {
+    height: 100%;
+}
+
+#chartcont {
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    position: relative;
+    border: 1px solid cadetblue;
+    top: 40%;
+    left: 2.5%;
+    background-color: white;
+    overflow-y: scroll;
+    display: none;
+}
+
+#chartcont1 {
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    position: relative;
+    border: 1px solid cadetblue;
+    left: 2%;
+    background-color: white;
+    overflow-y: scroll;
+    display: none;
+}
+
+.right-cont {
+    width: 35vw;
+    height: 72vh;
+    background-color: aliceblue;
+    float: right;
+}
+
+.side-nav {
+    position: absolute;
+    height: auto;
+    min-height: 350px;
+    width: 15vw;
+    min-width: 100px;
+    top: 40px;
+    float: left;
+    background-color: whitesmoke;
+    z-index: 10;
+    top: 10vh;
+    display: none;
+    box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.5);
+    border-bottom-right-radius: 10px;
+}
+
+.nav-element {
+    height: 50px;
+}
+
+.nav-element a {
+    margin-left: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #3e6389;
+    font-size: 20px;
+    font-family: "Open sans", sans-serif;
+}
+
+.cp {
+    color: #ff6600;
+}
+
+#matwork {
+    opacity: 0.5;
+}
+
+.mat:hover {
+    cursor: not-allowed;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+header {
+    background-color: white;
+}
+
+.mob-chart {
+    display: none;
+}
+
+.rightc-head {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    color: cadetblue;
+}
+
+.conclusions {
+    border-top: 4px solid dodgerblue;
+    height: auto;
+    position: relative;
+    background-color: aliceblue;
+}
+
+.conclusions h1 {
+    color: cadetblue;
+    position: relative;
+    background: none;
+    margin: 5px 0;
+}
+
+#fconclusions {
+    position: relative;
+    padding: 5px;
+    color: dodgerblue;
+}
+
+@media screen and (max-width: 950px) {
+    #enter-val {
+        width: 100%;
+    }
+    .matlab-working {
+        width: 100%;
+    }
+    .mob-chart {
+        display: block;
+    }
+    .right-cont {
+        display: none;
+    }
+    .side-nav {
+        width: 200px;
+    }
+    #pagechanger {
+        font-size: 12px;
+        position: relative;
+    }
+}
+
+@media screen and (max-height: 680px) {
+    #enter-val {
+        height: 79vh;
+    }
+    .prog-window {
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .prog-window {
+        height: 77%;
+    }
+    #input_button {
+        transform: scale(0.8);
+        display: block;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    #input-statements {
+        height: 105vh;
+    }
+    .matlab-working {
+        margin-top: 35vh;
+        height: 92vh;
+    }
+}
+
+@media screen and (min-height: 700px) {
+    #enter-val {
+        height: 62vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #pagechanger {
+        top: 0.5vh;
+        left: 1px;
+        font-size: 14px;
+    }
+    #input_button {
+        transform: scale(0.8);
+        display: block;
+    }
+}
+
+@media screen and (min-height: 1000px) {
+    #enter-val {
+        height: 62vh;
+    }
+    .prog-window {
+        height: 80%;
+    }
+}
+
+@media screen and (min-height: 1300px) {
+    #enter-val {
+        height: 45vh;
+    }
+    .prog-window {
+        height: 91%;
+    }
+    #pagechanger {
+        top: 0.5vh;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #pagechanger {
+        top: 0.5vh;
+        font-size: 10px;
+    }
+    @media screen and (max-height: 700px) {
+        #enter-val {
+            height: 85vh;
+        }
+        .prog-window {
+            height: 77%;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    @media screen and (min-height: 700px) {
+        #enter-val {
+            height: 80vh;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    @media screen and (max-height: 750px) {
+        #enter-val {
+            height: 62vh;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    @media screen and (max-height: 600px) {
+        #enter-val {
+            height: 98vh;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "An open loop Type 1 Impulse response is similar to?",
+      "answers": {
+        "a": "Type 0 step response",
+        "b": "Type 0 impulse response",
+        "c": "Type 0 ramp response",
+        "d": "None of the Above"
+      },
+
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Steady state error of Type 0 Ramp response is?",
+      "answers": {
+        "a": "0",
+        "b": "Infinity",
+        "c": "A/(1+k)",
+        "d": "None of the  Above"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Steady state error of Type 0 Step response is?",
+      "answers": {
+        "a": "0",
+        "b": "Infinity",
+        "c": "A/(1+k)",
+        "d": "None of the  Above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "To estimate steady state error for step response we use expression i.e., ess = A/(1+K<sub>P</sub> ). What   does Kp signifies.?",
+      "answers": {
+        "a": "Position Constant",
+        "b": "Velocity Constant",
+        "c": "Acceleration Constant",
+        "d": "None of the Above"
+      },
+
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": ". If the transfer function G(s) = 1/((S<sup>2</sup>+2S+1)), what is going to be the open loop output response for input response which is ramp in nature. ?",
+      "answers": {
+        "a": "G(s)/S<sup>2</sup>",
+        "b": "G(s)/S",
+        "c": "G(s)",
+        "d": "None of the  Above"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
